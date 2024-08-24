@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-mongoose.connect("mongodb+srv://admin:Neeru%402005@cluster0.mou2u4p.mongodb.net/")
+mongoose.connect("mongodb+srv://admin:Neeru%402005@cluster0.mou2u4p.mongodb.net/todos")
 const todoschema= new mongoose.Schema({
     title:String,
     description:String,
