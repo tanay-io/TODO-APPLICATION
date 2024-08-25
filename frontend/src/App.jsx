@@ -1,12 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import { CreateTodo } from './Components/CreateTodo';
+import { Todo } from './Components/Todo';
 
 function App() {
-  return(
-     <div>hi there</div>
-  )
+ 
+  const [todos, setTodos] = useState([]);
+
+  return (
+    <div>
+      <CreateTodo />
+      <Todo todos={todos} />
+    </div>
+  );
 }
 
-export default App
+export default App;
